@@ -30,8 +30,13 @@ module.exports = {
         normal: '#79CBCA',
         bold: '#6EB8B7'
       },
-      secondary: '#f5456b',
-      terciary: '#f9eedf'
+      secondary: {
+        light: '#FFDFDF',
+        medium: '#F1948A',
+        normal: '#f5456b'
+      },
+      terciary: '#f9eedf',
+      body: '#F5F5F5'
     },
     spacing: {
       px: '1px',
@@ -197,6 +202,9 @@ module.exports = {
       ],
       custom: [
         'Alex Brush'
+      ],
+      openSans: [
+        'Open Sans'
       ]
     },
     fontSize: {

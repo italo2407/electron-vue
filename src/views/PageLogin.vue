@@ -4,7 +4,7 @@
             <img src="../assets/img/Logo.png" class="my-16" alt="Logo"/>
         </div>
         <div class="w-full text-center my-24">
-            <h1 class="text-3xl text-secondary">Bienvenidos</h1>
+            <h1 class="text-3xl text-secondary-normal">Bienvenidos</h1>
             <br>
             <form @submit.prevent="signIn">
                 <div class="w-4/5 mx-auto relative">
@@ -55,8 +55,7 @@
     
 </template>
 
-<script>
-    //import { ipcRenderer } from 'electron' 
+<script> 
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
     import { faTimesCircle, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
     
@@ -90,7 +89,8 @@
                 this.form.username = ''
             },
             signIn() {
-                window.ipcRenderer.send('resize', [900, 600])
+                window.ipcRenderer.send('resize', [1024, 700])
+                this.$router.push({name: 'POS'})
             }
         }
     }
